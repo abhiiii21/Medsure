@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedSure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(medial-desk-with-clipboard.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #0d47a1;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        input {
+            padding: 15px;
+            width: 260px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 18px;
+            background: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            background: white;
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            font-size: 18px;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💊 MedSure</h1>
+<p>Find affordable medicine alternatives easily</p>
+
+<input type="text" id="medicineInput" placeholder="Enter medicine name">
+<br><br>
+<button onclick="searchMedicine()">Search</button>
+
+<div class="result" id="resultBox"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
